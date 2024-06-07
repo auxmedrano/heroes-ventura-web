@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HeroeDTO } from '../dto/heroeDTO';
+import { HeroDTO } from '../dto/heroDTO';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +11,7 @@ export class HeroesService {
 
   constructor(private http: HttpClient) {}
 
-  getHeroes(): Observable<HeroeDTO[]> {
-    return this.http.get<HeroeDTO[]>(`${this.baseUrl}/heroes`);
+  getHeroes(): Observable<HeroDTO[]> {
+    return this.http.get<HeroDTO[]>(`${this.baseUrl}/heroes`);
   }
 }

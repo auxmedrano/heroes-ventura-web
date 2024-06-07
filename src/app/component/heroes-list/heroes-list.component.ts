@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroeDTO } from '../../dto/heroeDTO';
+import { HeroDTO } from '../../dto/heroDTO';
 import { HeroesService } from '../../services/heroes.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { HeroesService } from '../../services/heroes.service';
   styleUrl: './heroes-list.component.scss',
 })
 export class HeroesListComponent implements OnInit {
-  heroes: HeroeDTO[] = [];
+  public heroes: HeroDTO[] = [];
 
   constructor(private heroesService: HeroesService) {}
 

@@ -1,4 +1,4 @@
-export interface HeroeDTO {
+export interface HeroDTO {
   id?: number;
   superhero: string;
   publisherId: number;

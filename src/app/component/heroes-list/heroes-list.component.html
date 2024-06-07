@@ -1,5 +1,28 @@
-<H1>aqui mostraremos todos los heroes</H1>
+<!--<H1>aqui mostraremos todos los heroes</H1>-->
 
-<div *ngFor="let hero of heroes">
-  <p>{{hero | json}}</p>
+<!--<div *ngFor="let hero of heroes">-->
+<!--  <p>{{hero | json}}</p>-->
+<!--</div>-->
+
+<div>
+  <h1>Listado de Héroes</h1>
 </div>
+<mat-divider></mat-divider>
+<br>
+
+<div class="grid mb-8 p-7">
+
+  <div class="col-12 sm:col-4 md:col-3  lg:col-3  xl:col-2"
+       *ngFor="let myHero of heroes; index as i">
+
+    <hero-card [hero]="myHero"
+               [myNumber]="i" [showHeader]="false">
+    </hero-card>
+
+  </div>
+</div>
+
+
+
+
+
