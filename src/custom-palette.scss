@@ -1,0 +1,72 @@
+// styles/custom-palette.scss
+
+@use '@angular/material' as mat;
+
+// Define custom color variables
+$custom-primary: mat.define-palette((
+  50 : #f5e5ed,
+  100 : #e7bdd1,
+  200 : #d792b2,
+  300 : #c66693,
+  400 : #ba457c,
+  500 : #ae2465,
+  600 : #a7205d,
+  700 : #9d1b53,
+  800 : #941649,
+  900 : #840d37,
+  A100 : #ffb5cc,
+  A200 : #ff82a9,
+  A400 : #ff4f86,
+  A700 : #ff3674,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #ffffff,
+  )
+));
+
+//$custom-accent: mat.define-palette((
+//  50: #fce4ec,
+//  100: #f8bbd0,
+//  200: #f48fb1,
+//  300: #f06292,
+//  400: #ec407a,
+//  500: #e91e63,
+//  600: #d81b60,
+//  700: #c2185b,
+//  800: #ad1457,
+//  900: #880e4f,
+//  A100: #ff80ab,
+//  A200: #ff4081,
+//  A400: #f50057,
+//  A700: #c51162,
+//  contrast: (
+//    50: mat.define-contrast(black, 0.87),
+//    100: mat.define-contrast(black, 0.87),
+//    200: mat.define-contrast(black, 0.87),
+//    300: mat.define-contrast(black, 0.87),
+//    400: mat.define-contrast(black, 0.87),
+//    500: mat.define-contrast(white, 1),
+//    600: mat.define-contrast(white, 1),
+//    700: mat.define-contrast(white, 1),
+//    800: mat.define-contrast(white, 1),
+//    900: mat.define-contrast(white, 1),
+//    A100: mat.define-contrast(black, 0.87),
+//    A200: mat.define-contrast(white, 1),
+//    A400: mat.define-contrast(white, 1),
+//    A700: mat.define-contrast(white, 1),
+//  )
+//));
+
+$custom-warn: mat.define-palette(mat.$red-palette);
